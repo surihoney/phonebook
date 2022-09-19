@@ -1,6 +1,19 @@
 # phonebook
 Simple phonebook CRUD with python (flask) and react js
 
+Requirements:
+1. Must have mysql server running
+
+Database config:
+1. Open file `api/api.py` and change mysql configuration details below to match your mysql setup
+
+```
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = 'phonebook'
+```
+
 Usage:
 
 1. Frontend
