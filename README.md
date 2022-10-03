@@ -35,6 +35,8 @@ Install packages
 ```shell script
 pip install --upgrade pip
 pip install -r requirements.txt
+
+export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$PATH"
 ```
 
 Run development server
