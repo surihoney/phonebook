@@ -1,6 +1,5 @@
 from urllib import response
-from flask import Flask, jsonify, render_template, request
-from flask_restful import Resource, Api
+from flask import Flask, jsonify, request
 from flask_mysqldb import MySQL
 from json import *
 from flask_cors import CORS, cross_origin
