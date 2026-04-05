@@ -7,14 +7,17 @@ Requirements:
 3. NodeJS version 15 or onwwards
 
 Database config:
-1. Open file `api/api.py` and change mysql configuration details below to match your mysql setup
+1. Access MYSQL database and create database `phonebook`
+2. Open file `.env-sample` and change mysql configuration details for example like below, to match your mysql setup
 
 ```
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'phonebook'
+MYSQL_HOST=127.0.0.1
+MYSQL_USER=admin
+MYSQL_PASSWORD=
+MYSQL_DB=phonebook
 ```
+
+3. Rename the `.env-sample` to `.env`
 
 Usage:
 
@@ -34,7 +37,7 @@ Install packages
 
 ```shell script
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r api/requirements.txt
 
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$PATH"
 ```

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { useParams } from "react-router-dom";
 import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import ErrorModal from './ErrorModal';
+import { ErrorModal } from './Error';
 
 function withParams(Component) {
 	return props => <Component {...props} params={useParams()} />;
