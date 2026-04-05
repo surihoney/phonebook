@@ -37,7 +37,7 @@ Install packages
 
 ```shell script
 pip install --upgrade pip
-pip install -r api/requirements.txt
+pip install -r requirements.txt
 
 export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$PATH"
 ```
@@ -58,9 +58,24 @@ Install packages
 run `npm install`
 
 
-Build scripts
+Dev build
 
-`npm start`
+`npm start` or `npm run dev`
+
+
+Production build
+
+`npm run build`
+
+
+Preview build
+
+`npm run preview`
+
+
+Test scripts
+
+`npm test`
 
 
 Open browser , and navigate to `http://localhost:3000`
